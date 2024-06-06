@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [starlight({
-    title: 'My Docs',
+    title: 'Rapscallions and Rockhoppers',
     customCss: [
         './src/tailwind.css'
     ],
@@ -16,11 +16,6 @@ export default defineConfig({
     sidebar: [{
       label: 'Guides',
       autogenerate: { directory: 'guides' },
-    }, {
-      label: 'Reference',
-      autogenerate: {
-        directory: 'reference'
-      }
     },{
       label: 'Information',
       autogenerate: {

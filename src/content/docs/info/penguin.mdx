@@ -1,0 +1,41 @@
+---
+title: Penguin
+description: The Penguin mob in Rapscallions and Rockhoppers.
+---
+
+import InfoBox from '../../../components/InfoBox.astro'
+import InfoBoxMultiImage from '../../../components/InfoBoxMultiImage.astro'
+import InfoBoxRow from '../../../components/InfoBoxRow.astro'
+import MinecraftIcon from '../../../components/MinecraftIcon.astro'
+
+<InfoBox title="Info Box">
+    <InfoBoxMultiImage images={[
+        {src: "/src/assets/rockhopper.png", alt: "Rockhopper Penguin Isometric Render", name: "Rockhopper"},
+        {src:"/src/assets/chinstrap.png", alt: "Chinstrap Penguin Isometric Render", name: "Chinstrap"},
+        {src:"/src/assets/gunter.png", alt: "Gunter Penguin Isometric Render", name: "Gunter"},
+    ]}/>
+    <InfoBoxRow label="Health Points">
+        <div slot="value">
+            8 (<MinecraftIcon icon="heart" /><MinecraftIcon icon="heart" /><MinecraftIcon icon="heart" /><MinecraftIcon icon="heart" />)
+        </div>
+    </InfoBoxRow>
+    <InfoBoxRow label="Behavior" value="Passive" />
+    <InfoBoxRow label="Speed" value="0.12" />
+</InfoBox>
+
+Penguins are [passive mobs](https://minecraft.wiki/w/Mob#Passive_mobs) that can speed up boats, and give special items in return for eating fish.
+
+# Spawning
+
+Penguins have two naturally spawning variants: Rockhopper and Chinstrap.
+
+| Variant    | Spawn Biomes                    |
+|------------|---------------------------------|
+| Rockhopper | Stony Shores                    |
+| Chinstrap  | Frozen Ocean, Deep Frozen Ocean |
+
+# Behavior
+
+
+# Trivia
+- Renaming a penguin to "Gunter" will result in it gaining the gunter texture.
